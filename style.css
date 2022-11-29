@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,100;1,500&family=Rubik:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.NavContainer{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    
+}
+.Nav_list ul{
+   list-style: none;
+   text-decoration: none;
+   cursor: pointer;
+   display: inline-flex;
+   
+
+}
+.Nav_list ul li{
+    margin: 0 9px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding: 5px;
+
+}
+.Nav_list ul li:hover{
+    background-color: rgb(224, 218, 218);
+    border-radius: 10px;
+}
+.sub-nav ul li{
+    display: block;
+}
+.sub-nav{
+    display: none; 
+}
+
+.Nav_list ul li:hover .sub-nav{
+    display: block;
+   position: absolute;
+   background-color: white;
+   margin-top: 5px;
+   margin-left: 15px;
+   border: 1px solid rgb(16, 16, 16);
+   border-radius: 5px;
+}
+.Nav_list ul li:hover .sub-nav ul{
+    display: inline;
+    padding-bottom: 60px;
+    text-align: justify;
+    cursor: pointer;
+    padding-top: 5px;
+    line-height: 35px;
+    
+}
+.Sign_logo{
+    height: 45px; 
+    width: 180px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c2450;
+   
+    width: 105px;
+    border-radius: 60px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+.user span{
+    color: white;
+}
+.user img{
+    color:#00bfff;
+   
+    margin-left: 21px;
+    
+}
+.kyc{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(235, 232, 232);
+    font-size: 16px;
+    font-weight: 850;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.main{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 105px;
+}
+.pylog{
+    width: 600px;
+   /* background-color: rgb(89, 59, 13); */
+}
+.pylog h1{
+    /* color: antiquewhite; */
+   font-size: 3.7rem;
+   padding-top: 38px;
+   font-weight: 600;
+}
+.pylog p{
+    width: 500px;
+    padding-top: 19px;
+    /* color: brown; */
+    font-size: 1.5rem;
+   
+}
+
+
+.App_downlode{
+    margin-top: 50px;
+    /* background-color: bisque; */
+}
+.downlode{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.downlode span{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 8px 0px 0px;
+    cursor: pointer;
+    color: white;
+}
+#android{
+    font-size: 1.3rem;
+    padding-left: 6px;
+    cursor: pointer;
+    color: white;
+}
+#apple{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+.downlode:hover{
+    background-color: rgb(196, 16, 16);
+    color: black;
+}
+.recharge_box{
+    background-color: #00bfff;
+    margin-top: 82px;
+}
+.recharge_box h1{
+    padding-top: 55px;
+    padding-bottom: 34px;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.recharge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 75px;
+    /* background-color: red; */
+}
+.a1{
+    width: 10px;
+    padding-top: 5px;
+    color: white;
+}
+.box{
+    width: 140px;
+    padding-left: 10px;
+    cursor: pointer;
+    line-height: 25px;
+}
+
+.box:hover{
+    border-radius: 12px;
+    background-color: #3a8da9;
+}
+
+/* booking secction */
+.recharge_box1{
+    background-color: #0c2450;
+    
+}
+.recharge_box1 h1{
+    padding-top: 55px;
+    padding-bottom: 34px;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+.booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 75px;
+    /* background-color: red; */
+}
+.a2{
+    width: 10px;
+    padding-top: 5px;
+    color: white;
+}
+.box1{
+    width: 140px;
+    padding-left: 10px;
+    cursor: pointer;
+    line-height: 25px;
+}
+.box1:hover{
+    border-radius: 12px;
+    background-color: #375794;
+}
+
+.instruments{
+    background-color: #f5f7fa;
+    
+    padding-top: 80px;
+
+}
+.instruments h1{
+    padding-bottom: 20px;
+    font-size: 55px;
+    font-weight: 1000;
+}
+.paytm-wallet{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 10px 25px;
+}
+.paytm-wallet span{
+    padding-left: 10px;
+    width: 10px;
+}
+.Wallet-box h2{
+    padding-left: 25px;
+padding-top: 20px;
+width: 310px;
+font-size: 30px;
+font-weight: 1000;
+}
+.load-span{
+    padding-left: 25px;
+    padding-top: 19px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 520px;
+    line-height: 25px;
+}
+
+.Instruments-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    background-color: rgb(237, 236, 236);
+    /* background-color: red; */
+   
+    width: 92%;
+    margin-left: 4%;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+.payment-img {
+   
+    margin-left: 103px;
+    
+}
+
+.Instruments-box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    background-color: rgb(237, 236, 236);
+    /* background-color: red; */
+    margin-top: -40px;
+   
+    width: 92%;
+    margin-left: 4%;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+.hdfc{
+    width: 45%;
+    background-color: rgb(237, 236, 236);
+    /* margin-left: 4%; */
+    margin-top: -40px;
+    padding-left: 20px;
+    height: 600px;
+    border-radius: 20px;
+}
+.hdfc-img{
+    padding-left: 50px;
+   padding-top: 50px;
+   cursor: pointer;
+}
+.hdfc-h1{
+    padding-left: 50px;
+    padding-top: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.hdfc-h1 h1 span{
+    display: block;
+}
+.hdfc-h1 p{
+   cursor: pointer;
+    padding-top: 10px;
+    font-size: 23px;
+    font-weight: 400;
+}
+.card-img{
+   padding-top: 11px;
+   cursor: pointer;
+}
+.sbi{
+    width: 45%;
+    background-color: rgb(237, 236, 236);
+    /* margin-left: 4%; */
+    margin-top: -40px;
+    padding-left: 20px;
+    height: 600px;
+    border-radius: 20px;
+}
+.sbi-img{
+    padding-left: 50px;
+   padding-top: 100px;
+   cursor: pointer;
+}
+.sbi-h1{
+    padding-left: 50px;
+    padding-top: 20px;
+    
+    cursor: pointer;
+}
+.sbi-h1 h1 span{
+    display: block;
+}
+.sbi-h1 p{
+    cursor: pointer;
+     padding-top: 10px;
+     font-size: 23px;
+     font-weight: 400;
+ }
+.card-img{
+    padding-top: 11px;
+    cursor: pointer;
+ }
+ .bank-card{
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+.financia-box{
+    background-color: rgb(237, 236, 236);
+   
+    margin-top: 90px;
+   
+}
+.financia-box h1{
+   padding-top: 80px;
+   padding-left: 50px;
+   font-size: 52px;
+   font-weight: 700;
+   font-family: sans-serif;
+}
+.Financia{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.financia-left{
+   margin-top: 35px;
+    padding-left: 50px;
+}
+.financial-h2{
+    margin-top: 48px;
+    
+    font-size: 32px;
+    font-weight: 900;
+}
+.financial-h2 span{
+    display: block;
+}
+.financial-p{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 490px;
+}
+.financial-img{
+    padding-bottom: 40px;
+}
